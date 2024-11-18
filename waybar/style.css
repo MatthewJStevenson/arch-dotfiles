@@ -1,0 +1,119 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: DroidSansMNerdFontMono, monospace;
+  font-weight: 700;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: #cdd6f4;
+}
+
+tooltip {
+  background: #181926;
+  border-radius: 11px;
+}
+
+#custom-icon, #mpris, #custom-power, #custom-notification, #hyprland-submap, #clock, #pulseaudio, #cpu, #tray, #memory, #workspaces, #window {
+  /* background: #181926;  */
+  background-color: rgba(24, 25, 38, 0.60);
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  margin: 7px 0px 0px 0px;
+  border-radius: 12px;
+}
+
+#custom-icon {
+    font-weight: normal;
+    margin-left: 8px;
+    font-size: 24px;
+}
+
+#custom-icon:hover {
+    background: #1793d1;
+    color: #ffffff;
+}
+
+#window {
+  margin-left: 7px;
+  transition: none;
+}
+
+window#waybar.empty #window {
+  background: transparent;
+}
+
+#workspaces {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#workspaces button {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  margin: 5px;
+}
+
+#workspaces button.active {
+  background: #eff1f5;
+  color: #211a17;
+}
+
+#workspaces button:hover {
+  background: #444963;
+  color: #ffffff;
+}
+
+#workspaces button.urgent {
+  background: #dd7878;
+  color: #ffffff;
+}
+
+#mpris {
+	margin-right: 0px;
+	transition: none;
+}
+
+#tray {
+	margin-right: 0px;
+	transition: none;
+}
+
+#tray menu {
+  background: #181926;
+  border-radius: 10px;
+  font-weight: normal;
+  color: #ffffff;
+  outline-color: red;
+}
+
+#pulseaudio {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* #clock {
+  padding-right: 10px;
+} */
+
+#custom-notification {
+  margin-right: 7px;
+  padding-right: 6px;
+  font-size: 16px;
+}
+
+#custom-power {
+  margin-right: 7px;
+  padding-right: 8px;
+  color: #1793d1;
+  font-size: 20px;
+}
+
+#custom-power:hover {
+  background: #e64553;
+  color: #ffffff;
+}
