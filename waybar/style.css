@@ -19,7 +19,7 @@ tooltip {
 
 #custom-icon, #mpris, #custom-power, #custom-notification, #hyprland-submap, #clock, #pulseaudio, #cpu, #tray, #memory, #workspaces, #window {
   /* background: #181926;  */
-  background-color: rgba(24, 25, 38, 0.60);
+  background-color: rgba(24, 25, 38, 0.80);
   color: #ffffff;
   padding: 0px 10px 0px 10px;
   margin: 7px 0px 0px 0px;
