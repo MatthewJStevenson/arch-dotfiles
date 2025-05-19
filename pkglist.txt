@@ -1,5 +1,4 @@
 alsa-utils
-apple-fonts
 base
 base-devel
 blanket
@@ -17,6 +16,7 @@ git
 github-cli
 gnome-calculator
 gnome-calendar
+gnome-clocks
 gnome-disk-utility
 gnome-font-viewer
 gnome-system-monitor
@@ -27,6 +27,7 @@ grim
 grub
 gtk3
 hyprland
+hyprlock
 hyprpaper
 intel-ucode
 kitty
@@ -55,6 +56,9 @@ pamixer
 pavucontrol
 pulseaudio
 pulseaudio-alsa
+python-pip
+python-pipenv
+resources
 rofi-wayland
 rustup
 slurp
@@ -67,6 +71,7 @@ thunderbird
 transmission-gtk
 ttf-hack-nerd
 ttf-nerd-fonts-symbols
+ttf-sourcecodepro-nerd
 vim
 vim-runtime
 vlc

@@ -1,8 +1,8 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: DroidSansMNerdFontMono, monospace;
-  font-weight: 700;
+  font-family: SauceCodeProNerdFontMono, monospace;
+  font-weight: 600;
   font-size: 13px;
   min-height: 0;
 }
@@ -54,8 +54,8 @@ window#waybar.empty #window {
 #workspaces button {
   color: #ffffff;
   border-radius: 50%;
-  padding: 3px;
-  margin: 5px;
+  padding: 3px 4px 3px 4px;
+  margin: 6px 4px 6px 4px;
 }
 
 #workspaces button.active {
@@ -69,8 +69,8 @@ window#waybar.empty #window {
 }
 
 #workspaces button.urgent {
-  background: #dd7878;
-  color: #ffffff;
+  background: #e78284;
+  color: #211a17;
 }
 
 #mpris {
@@ -85,10 +85,26 @@ window#waybar.empty #window {
 
 #tray menu {
   background: #181926;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: normal;
   color: #ffffff;
-  outline-color: red;
+}
+
+
+#tray menu menuitem{
+    padding-right: 0px;
+    padding-left: 0px;
+    border-radius: 12px;
+}
+
+#tray menu menuitem:hover {
+    color: white;
+    background-color: #45475a;
+}
+
+#tray window decoration {
+  border-radius: 10px;
+  box-shadow: none;
 }
 
 #pulseaudio {
