@@ -19,10 +19,13 @@
     "modules-right": [
         "mpris",
         "tray",
-        // "memory",
-        // "cpu",
-        "clock",
         "pulseaudio",
+        // "cpu",
+        // "backlight",
+        // "network",
+        // "memory",
+        // "battery",
+        "clock",
         "custom/notification"
         // "custom/power"
     ],
@@ -59,15 +62,64 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%I:%M %e %h}",
+        "format": "{:%e %h %I:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "on-click": "gnome-calendar"
+    },
+    "battery": {
+        "format": "{icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": true,
+	"tooltip-format":"{capacity}%"
+    },
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": [
+                "󰃛",
+                "󰃝",
+                "󰃠"
+            ]
+        },
+        "tooltip": true,
+        "tooltip-format": "{percent}%"
     },
     "pulseaudio": {
         "format": "{icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "\udb81\udf5f {format_source}",
+        "format-muted": "\udb81\udf5f",
         "format-source": "",
         "format-source-muted": "",
         "format-icons": {
@@ -78,7 +130,19 @@
                 ""
             ]
         },
-        "on-click": "pavucontrol"
+        "tooltip": true,
+        "tooltip-format": "{volume}%",
+        "on-click": "ghostty alsamixer"
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-linked": "",
+        "format-disconnected": "",
+        "tooltip": true,
+        "tooltip-format": "{essid}",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "kitty nmtui"
     },
     "hyprland/window": {
         "format": "{}",
@@ -126,7 +190,10 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{}%  "
+        "format": "{}%  ",
+        "interval": 5,
+	    "tooltip": true,
+	    "tooltip-format": "{used} GiB {percentage}%"
     },
     "hyprland/scratchpad": {
         "format": "{icon} {count}",
